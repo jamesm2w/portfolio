@@ -51,13 +51,13 @@
 		{
 			"name": "Engine Roller (Worlds Adrift)",
 			"date": "2018",
-			"link": {"Website": "", "Github Source": ""},
+			"link": {"Website": "https://engine-roller.glitch.me/", "Github Source": "https://github.com/jamesm2w/engine-roller"},
 			"description": "A speculative project which randomly generates schematics similar to those which appear in Worlds Adrift. Special Thanks to Ziwix (Random Algorithm) and Machine Maker (Schematic names) for their help."
 		},
 		{
 			"name": "WANN/WAAC (Worlds Adrift)",
 			"date": "2016",
-			"link": {"Soundcloud": "https://soundcloud.com/wan-on-air-official", "Github Archive": ""},
+			"link": {"Soundcloud": "https://soundcloud.com/wan-on-air-official", "Github Archive": "https://github.com/jamesm2w/WANN-Audio-Archive"},
 			"description": "A podcast/newscast project recorded weekly based about news in the Worlds Adrift game. I was involved in editing the show, thanks also go to: MeisterKeen (Voice), Vick Viper (Voice), Louthinator (Voice), Mattcus (Editing, Music) as well as any guests which appeared on the show."
 		},
 		{
@@ -81,13 +81,13 @@
 		{
 			"name": "Card Engine (Python)",
 			"date": "2019",
-			"link": {"Github Source": ""},
+			"link": {"Github Source": "https://github.com/jamesm2w/CardEngine"},
 			"description": "Simple scripts to represent cards, decks and hands in python. Includes algorithms for scoring hands against 5-card poker rules, shuffling cards, drawing from the deck as well as discarding. Web version also available."
 		},
 		{
 			"name": "Voice Commands",
 			"date": "2018",
-			"link": {"Website": ""},
+			"link": {"Website": "https://voice-commands.glitch.me/"},
 			"description": "An experiment with the experimental WebAPI for speech to text. A few different commands recognised (similar to a voice assistant), recommended to use Google Chrome, other browsers may not support."
 		},
 		{

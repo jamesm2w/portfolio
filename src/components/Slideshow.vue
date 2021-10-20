@@ -31,7 +31,7 @@
             >
         </transition>
         
-
+        <span class="absolute bottom-0 right-0"><a href="https://instagram.com/jamesm2w" target="_blank">Image Credit: James Macer-Wright</a></span>
     </div>    
 </template>
 

@@ -40,143 +40,79 @@
   </div>
 
   <div ref="projectSection" class="min-h-screen w-screen">
-    <Button
-      @click="
-        $refs.topSection.scrollIntoView({
-          block: 'start',
-          inline: 'nearest',
-          behavior: 'smooth',
-        })
+    <NavButtons
+      :navitems="navItems"
+      class="
+        sticky
+        top-3
+        flex
+        sm:flex-row
+        flex-wrap
+        justify-center
+        md:flex-col md:float-left
+        ml-3
+        py-3  
       "
-      >Top</Button
-    >
-    <Button
-      @click="
-        $refs.sectionProjects.scrollIntoView({
-          block: 'start',
-          inline: 'nearest',
-          behavior: 'smooth',
-        })
-      "
-      >Projects</Button
-    >
-    <Button
-      @click="
-        $refs.sectionCoursework.scrollIntoView({
-          block: 'start',
-          inline: 'nearest',
-          behavior: 'smooth',
-        })
-      "
-      >Coursework</Button
-    >
-    <Button
-      @click="
-        $refs.socialLinks.scrollIntoView({
-          block: 'start',
-          inline: 'nearest',
-          behavior: 'smooth',
-        })
-      "
-      >Contact</Button
-    >
+      style="background-color: #282c34;"
+    ></NavButtons>
 
-    <div class="font-mono font-semibold text-5xl">Technologies</div>
-    <p class="text-center m-auto sm:w-full md:w-9/12">
-      All the programming technologies I have some experience working with.
+    <div ref="sectionTechnology"></div>
+    <Section
+      title="Languages"
+      description="All the programming technologies I have some experience working with.
       However, I'm always up for a new challenge and to learn new languages as
-      they're required by the project I'm working on.
-    </p>
-    <div class="flex flex-row flex-wrap w-9/12 justify-center m-auto">
-      <Pill v-for="language in projectData.languages" :key="language">
-        {{ language }}
-      </Pill>
-    </div>
+      they're required by the project I'm working on."
+    >
+      <div class="flex flex-row flex-wrap w-9/12 justify-center m-auto">
+        <Pill v-for="language in projectData.languages" :key="language">
+          {{ language }}
+        </Pill>
+      </div>
+    </Section>
 
-    <hr class="w-9/12 my-2 m-auto" />
-
-    <div class="font-mono font-semibold text-5xl" ref="sectionProjects">
-      Projects
-    </div>
-    <p class="text-center m-auto sm:w-full md:w-9/12">
-      Personal Projects which have been of finished enough to publish on the
+    <div ref="sectionProjects"></div>
+    <Section
+      title="Projects"
+      description="Personal Projects which have been of finished enough to publish on the
       internet. Most are in various states of completion, if you want me to work
       on something just contact me and I'll see if I can do it. Alternatively,
-      create a pull request :)
-    </p>
-    <Button
-      class="text-sm"
-      @click="
-        $refs.projectSection.scrollIntoView({
-          block: 'start',
-          inline: 'nearest',
-          behavior: 'smooth',
-        })
-      "
-      >Click to go back up</Button
+      create a pull request :)"
     >
-    <div class="w-10/12 hero m-auto pb-10">
-      <Project
-        v-for="project in projectData.projects"
-        :key="project.name"
-        v-bind="project"
-      ></Project>
-    </div>
+      <div class="w-10/12 hero m-auto pb-10">
+        <Project
+          v-for="project in projectData.projects"
+          :key="project.name"
+          v-bind="project"
+        ></Project>
+      </div>
+    </Section>
 
-    <hr class="w-9/12 my-2 m-auto" />
-
-    <div class="font-mono font-semibold text-5xl" ref="sectionCoursework">
-      Coursework
-    </div>
-    <p class="text-center m-auto sm:w-full md:w-9/12">
-      Coursework/Graded Projects from school and university, which I have
+    <div ref="sectionCoursework"></div>
+    <Section
+      title="Coursework"
+      description="Coursework/Graded Projects from school and university, which I have
       completed and wanted to make a note of. In most cases the source code can
-      not be published as the task could be reused.
-    </p>
-    <Button
-      class="text-sm"
-      @click="
-        $refs.projectSection.scrollIntoView({
-          block: 'start',
-          inline: 'nearest',
-          behavior: 'smooth',
-        })
-      "
-      >Click to go back up</Button
+      not be published as the task could be reused."
     >
-    <div class="w-10/12 hero m-auto pb-10">
-      <Project
-        v-for="project in projectData.coursework"
-        :key="project.name"
-        v-bind="project"
-      ></Project>
-    </div>
+      <div class="w-10/12 hero m-auto pb-10">
+        <Project
+          v-for="project in projectData.coursework"
+          :key="project.name"
+          v-bind="project"
+        ></Project>
+      </div>
+    </Section>
 
-    <hr class="w-9/12 my-2 m-auto" />
-
-    <div class="font-mono font-semibold text-4xl" ref="socialLinks">
-      Contact & Links
-    </div>
-    <p class="text-center m-auto sm:w-full md:w-9/12">Contact Me!</p>
-    <Button
-      class="text-sm"
-      @click="
-        $refs.projectSection.scrollIntoView({
-          block: 'start',
-          inline: 'nearest',
-          behavior: 'smooth',
-        })
-      "
-      >Click to go back up</Button
-    >
-
-    <div class="flex flex-row flex-wrap w-9/12 justify-center m-auto">
-      <Pill v-for="linkObj in projectData.socialLinks" :key="linkObj.name">
-        <a :href="linkObj.url" target="_blank">{{ linkObj.name }}</a>
-      </Pill>
-    </div>
+    <div ref="socialLinks"></div>
+    <Section title="Contact & Links" description="Contact Me!">
+      <div class="flex flex-row flex-wrap w-9/12 justify-center m-auto">
+        <Pill v-for="linkObj in projectData.socialLinks" :key="linkObj.name">
+          <a :href="linkObj.url" target="_blank">{{ linkObj.name }}</a>
+        </Pill>
+      </div>
+    </Section>
   </div>
-  <div class="bg-gray-900 h-10 py-2 mt-2">
+  <div class="bg-gray-900 min-h-10 py-2 mt-2">
     <span class="float-left font-mono ml-2"
       >Copyright (C) James Macer-Wright {{ new Date().getFullYear() }}</span
     >
@@ -185,6 +121,7 @@
         >Source (Github)</a
       ></span
     >
+    <div class="clear-both"></div>
   </div>
 </template>
 <script setup>
@@ -192,10 +129,30 @@ import Button from "./components/Button.vue";
 import Pill from "./components/Pill.vue";
 import Slideshow from "./components/Slideshow.vue";
 import Project from "./components/Project.vue";
+import Section from "./components/Section.vue";
+import NavButtons from "./components/NavButtons.vue";
+
+import { ref } from "vue";
 
 import * as projectData from "./assets/projects.json";
 
 console.log(projectData.projects);
+
+const topSection = ref(null);
+const projectSection = ref(null);
+
+const sectionTechnology = ref(null);
+const sectionProjects = ref(null);
+const sectionCoursework = ref(null);
+const socialLinks = ref(null);
+
+const navItems = [
+  { name: "Top", target: topSection },
+  { name: "Languages", target: sectionTechnology },
+  { name: "Projects", target: sectionProjects },
+  { name: "Coursework", target: sectionCoursework },
+  { name: "Contact", target: socialLinks },
+];
 </script>
 
 <style>

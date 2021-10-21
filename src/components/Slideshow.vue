@@ -3,12 +3,11 @@
 
         <transition name="fade" mode="out-in">
             <img 
-                v-if="index == 0"
                 class="w-full h-full filter blur-sm" 
                 src="./../assets/SlideshowBeach.jpg" 
                 alt="Picture of a Beach"
             >
-
+            <!--
             <img
                 v-else-if="index == 1"
                 class="w-full h-full filter blur-sm" 
@@ -28,7 +27,7 @@
                 class="w-full h-full filter blur-sm" 
                 src="./../assets/SlideshowSea.jpg" 
                 alt="Picture of the Sea"
-            >
+            >-->
         </transition>
         
         <span class="absolute bottom-0 right-0"><a href="https://instagram.com/jamesm2w" target="_blank">Image Credit: James Macer-Wright</a></span>

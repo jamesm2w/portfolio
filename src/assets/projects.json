@@ -13,12 +13,12 @@
         "LaTeX",
         "C",
         "C++",
-        "Git", 
-        "Bash", 
-        "MongoDB", 
-        "Tailwind", 
-        "Docker", 
-        "Excel"  
+        "Git",
+        "Bash",
+        "MongoDB",
+        "Tailwind",
+        "Docker",
+        "Excel"
     ],
     "socialLinks": [
         {
@@ -45,11 +45,7 @@
             "url": "https://instagram.com/jamesm2w/"
         },
         {
-            "name": "Discord: jamesm2w#2954",
-            "url": ""
-        },
-        {
-            "name": "Email: me (at) jamesm2w.me",
+            "name": "Email: me@jamesm2w.me",
             "url": "mailto:me@jamesm2w.me"
         }
     ],
@@ -57,16 +53,39 @@
         {
             "name": "CultBot",
             "date": "2021",
-            "links": [{"name": "Github Source", "url": "https://github.com/jamesm2w/cultbot"}],
+            "links": [
+                {
+                    "name": "Github Source",
+                    "url": "https://github.com/jamesm2w/cultbot"
+                }
+            ],
             "description": "Multi-Purpose Chatbot for Discord. Integrates with the Discord command API to provide a karma functionality.",
-            "languages": ["Node.js", "SQL"]
+            "languages": [
+                "Node.js",
+                "SQL"
+            ]
         },
         {
             "name": "Tweetbot",
-            "date": "2021",
-            "links": [{"name": "Github Source", "url": "https://github.com/jamesm2w/tweetbot"}],
+            "date": "2021-2022",
+            "links": [
+                {
+                    "name": "Github Source",
+                    "url": "https://github.com/jamesm2w/tweetbot"
+                },
+                {
+                    "name": "v2 Source",
+                    "url": "https://github.com/jamesm2w/tweetbot-v2"
+                }
+            ],
             "description": "Server program which listens for tweets and relays them to discord webhooks. The Database is implemented in MongoDB and the whole thing is also set up to work as a docker image.",
-            "languages": ["Node.js", "MongoDB", "Docker"]
+            "languages": [
+                "Node.js",
+                "MongoDB",
+                "Docker",
+                "Twitter",
+                "Discord"
+            ]
         },
         {
             "name": "ParliamentDiagram Generator",
@@ -83,12 +102,10 @@
             ],
             "description": "A Node.js and Vue.js rewrite of the original parliament diagram creator designed for use on Wikipedia, Wikimedia Commons and Wikidata. My motivation was to create a modern web application to allow for a faster and easier workflow, as well as incorporate modern web solution such as local storage and single-page applications which don't require a server.",
             "languages": [
-                "JS",
                 "Node.js",
                 "Vue.js",
-                "HTML",
-                "CSS",
-                "Tailwind"
+                "Tailwind",
+                "HTML, JS, CSS"
             ]
         },
         {
@@ -106,6 +123,20 @@
             ]
         },
         {
+            "name": "TheNewStudent",
+            "date": "2019-2020",
+            "links": [
+                {"name": "Github Source", "url": "https://github.com/jamesm2w/TheNewStudent"}
+            ],
+            "description": "The New Student - Prototype Student Learning Social Media Application. Developed as part of my A-Level Computer Science NEA. Made with Node.js server and a HTML, JS, CSS frontend. Utilised websockets to create a realtime communication platform between users, as well as offering standard social media functionality and a learning system which gave students the opportunity to answer questions set by teachers.",
+            "languages": [
+                "Node.js",
+                "SQLite",
+                "HTML, JS, CSS"
+            ]
+
+        },
+        {
             "name": "UK Elections Hex Map",
             "date": "December 2019",
             "links": [
@@ -120,10 +151,8 @@
             ],
             "description": "An interactive hex-map of the UK Parliamentary Constituencies with election results for the 2015, 2017 and 2019 general elections as well as by-elections in-between. Allows for multiple viewing options and constituency search. Data was sourced from the House of Commons library, ODI Leeds for the Hex Map and the Open Geography Portal for ONS names and codes, data was pre-processed using python scripts to create JSON files.",
             "languages": [
-                "JS",
-                "HTML",
-                "CSS",
-                "Python"
+                "Python",
+                "HTML, JS, CSS"
             ]
         },
         {
@@ -141,9 +170,7 @@
             ],
             "description": "Displays UK Parliament Petition data but with an extra level of breakdown and analysis. See the data by constituency, country, UK region. See also totals for MPs by party. A simple serverless web app motivated by the many popular petitions which were created at the time.",
             "languages": [
-                "JS",
-                "HTML",
-                "CSS"
+                "HTML, JS, CSS"
             ]
         },
         {
@@ -157,7 +184,8 @@
             ],
             "description": "Building a functioning 4x4 remote controlled car from scratch and programming a control system which allows 4 wheel steering, throttle control, daylight activated headlights, tilt sensor, and an active suspension for tilt correction. Code was written for the Arduino microcontroller in C++, the car and our team went on to win the 2019 National Championships. Unfortuntely the source code can not be published publicly.",
             "languages": [
-                "C++"
+                "C++",
+                "Arduino"
             ]
         },
         {
@@ -173,12 +201,11 @@
                     "url": "https://github.com/jamesm2w/engine-roller"
                 }
             ],
-            "description": "A speculative project which randomly generates schematics similar to those which appear in Worlds Adrift. Contributions from Ziwix (Random Algorithm) and Machine Maker (Schematic names) were invaluable in reverse-engineering the process.",
+            "description": "A speculative project which randomly generates schematics similar to those which appear in Worlds Adrift. Developed collaboratively to create which was invaluable in reverse-engineering the algorithms and random generation.",
             "languages": [
                 "Node.js",
-                "JS",
-                "HTML",
-                "CSS"
+                "MATLAB",
+                "HTML, JS, CSS"
             ]
         },
         {
@@ -200,15 +227,13 @@
             "date": "2019",
             "links": [
                 {
-                    "name":"Website",
+                    "name": "Website",
                     "url": "https://5carddraw.glitch.me/"
                 }
             ],
             "description": "Web version of the python Card Engine. Simple implementation of Poker (5 card draw). Click cards to discard, and click draw to draw from deck/rank hand.",
             "languages": [
-                "HTML",
-                "CSS",
-                "JS"
+                "HTML, JS, CSS"
             ]
         },
         {
@@ -233,38 +258,77 @@
     "coursework": [
         {
             "name": "Robot Maze Controller",
-            "date": "CS118",
+            "date": "CS118 Programming, 2020",
             "links": [],
-            "description": "Create a controller for a Robot Maze",
-            "languages": ["Java"]
+            "description": "Create a controller for a Robot to solve complex 2-Dimensional mazes using an algorithm.",
+            "languages": [
+                "Java"
+            ]
         },
         {
             "name": "File Editor",
-            "date": "CS132",
+            "date": "CS132 Computer Architecture, 2021",
             "links": [],
-            "description": "",
-            "languages": ["C"]
+            "description": "Create a command-line file editor which supports basic line editing, file creation, file deletion, and file copying. In addition, I extended it with modular functionality to allow custom program definitions as well as a basic variable system.",
+            "languages": [
+                "C"
+            ]
         },
         {
             "name": "Scratch Clone",
-            "date": "CS141",
-            "links": [],
-            "description": "",
-            "languages": ["Haskell"]
+            "date": "CS141 Functional Programming, 2021",
+            "links": [{"name": "Github Source", "url": "https://github.com/jamesm2w/scratch-clone"}, {"name": "Extension Source", "url": "https://github.com/jamesm2w/scratch-clone-ext"}],
+            "description": "Create an interpreter for a scratch-like programming language in Haskell. I added several extensions to the language including support for callable functions, subroutines, further arithmetic expressions, and program control such as loops and break statements.",
+            "languages": [
+                "Haskell"
+            ]
         },
         {
             "name": "WAFFLES",
-            "date": "CS126",
+            "date": "CS126 Design of Information Structures, 2021",
             "links": [],
-            "description": "",
-            "languages": ["Java"]
+            "description": "Create a restaurant review service which offers reviews of restaurants in the local area, including user reviews, favourites and information on the food available. I implemented several data structures, such as self-balancing binary search trees, hashmaps, linked lists, etc. to create a fast and responsive webpage with thousands of entries.",
+            "languages": [
+                "Java"
+            ]
         },
         {
             "name": "Chorinator",
-            "date": "CS139",
+            "date": "CS139 Web Development, 2021",
             "links": [],
-            "description": "",
-            "languages": ["PHP", "SQL", "HTML", "JS", "CSS"]
+            "description": "Create a chore management system using PHP, MySQL, and JavaScript. I implemented a simple web api system for managing chores, users, and assigning users to tasks in a household group.",
+            "languages": [
+                "PHP",
+                "SQL",
+                "HTML, JS, CSS"
+            ]
+        },
+        {
+            "name": "Packet Sniffer",
+            "date": "CS241 Operating Systems & Computer Networks, 2021",
+            "links": [],
+            "description": "Write a multithreaded packet sniffer which intercets ARP, IP, TCP packets to check for any suspicious activity. I created a threadpool and queue system to distribute work and ensure a performant system.",
+            "languages": [
+                "C"
+            ]
+        },
+        {
+            "name": "ShowMustGoOn",
+            "date": "CS255 Artificial Intelligence, 2021",
+            "links": [],
+            "description": "Using backtracking search algorithms with various heuristics and stochastic local search algorithms, create a program which can solve various scheduling problems with given constraints on which bands can play to which demographics, accounting for how much time each band can play.",
+            "languages": [
+                "Python"
+            ]
+        },
+        {
+            "name": "Conjugate Gradient Solver (ACACGS)",
+            "date": "CS257 Advanced Computer Architecture, 2022",
+            "links": [],
+            "description": "Given a microprogram, the task was to optimise the C code performance using parallelisation with OpenMP, vectorisation using Intel Intrinsics and SIMD instructions, and any other compiler optimisations which were available. The program was then tested on Intel Skylake, I achieved a speedup of roughly 6x compared to the original.",
+            "languages": [
+                "C"
+            ]
         }
     ]
 }

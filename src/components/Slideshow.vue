@@ -4,8 +4,8 @@
         <transition name="fade" mode="out-in">
             <img 
                 class="w-full h-full filter blur-sm" 
-                src="./../assets/SlideshowBeach.jpg" 
-                alt="Picture of a Beach"
+                src="./../assets/SlideshowDorsetHill.jpg" 
+                alt="Picture of a Hill in Dorset"
             >
             <!--
             <img
@@ -30,7 +30,7 @@
             >-->
         </transition>
         
-        <span class="absolute bottom-0 right-0"><a href="https://instagram.com/jamesm2w" target="_blank">Image Credit: James Macer-Wright</a></span>
+        <span class="absolute bottom-0 right-0"><a href="https://instagram.com/jamesm2w" target="_blank">Image Credit: James Macer-Wright (Instagram)</a></span>
     </div>    
 </template>
 

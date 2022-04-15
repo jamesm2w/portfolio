@@ -1,7 +1,7 @@
 <template>
   <Slideshow class="z-0" />
 
-  <div ref="topSection" class="h-screen w-screen">
+  <div ref="topSection" class="h-screen w-screen" style="scroll-snap-align: start;">
     <img
       class="
         rounded-full
@@ -23,8 +23,8 @@
       jamesm2w
     </div>
 
-    <div class="sticky py-4 text-xl font-medium block">
-      Computer Scientist from Dorset, UK
+    <div class="sticky py-4 text-xl font-medium block text-white">
+      Computer Science Student from Dorset
     </div>
 
     <Button
@@ -35,25 +35,14 @@
           behavior: 'smooth',
         })
       "
+      class="text-white"
       >View Projects</Button
     >
   </div>
 
-  <div ref="projectSection" class="min-h-screen w-screen">
+  <div ref="projectSection" class="min-h-screen w-screen" project-section style="scroll-snap-align: start;">
     <NavButtons
       :navitems="navItems"
-      class="
-        sticky
-        top-3
-        flex
-        sm:flex-row
-        flex-wrap
-        justify-center
-        md:flex-col md:float-left
-        ml-3
-        py-3  
-      "
-      style="background-color: #282c34;"
     ></NavButtons>
 
     <div ref="sectionTechnology"></div>
@@ -64,7 +53,7 @@
       they're required by the project I'm working on."
     >
       <div class="flex flex-row flex-wrap w-9/12 justify-center m-auto">
-        <Pill v-for="language in projectData.languages" :key="language">
+        <Pill v-for="language in projectData.languages" :key="language" class=" bg-fuchsia-600 text-white">
           {{ language }}
         </Pill>
       </div>
@@ -106,8 +95,8 @@
     <div ref="socialLinks"></div>
     <Section title="Contact & Links" description="Contact Me!">
       <div class="flex flex-row flex-wrap w-9/12 justify-center m-auto">
-        <Pill v-for="linkObj in projectData.socialLinks" :key="linkObj.name">
-          <a :href="linkObj.url" target="_blank">{{ linkObj.name }}</a>
+        <Pill v-for="linkObj in projectData.socialLinks" :key="linkObj.name" class="bg-emerald-500 hover:bg-emerald-700 transition-all duration-100 hover:shadow-md text-white">
+          <a :href="linkObj.url" target="_blank" class="text-white">{{ linkObj.name }}</a>
         </Pill>
       </div>
     </Section>
@@ -147,14 +136,13 @@ const sectionCoursework = ref(null);
 const socialLinks = ref(null);
 
 const navItems = [
-  { name: "Top", target: topSection },
+  { name: "Main", target: topSection },
   { name: "Languages", target: sectionTechnology },
   { name: "Projects", target: sectionProjects },
   { name: "Coursework", target: sectionCoursework },
   { name: "Contact", target: socialLinks },
 ];
 </script>
-
 <style>
 #app {
   font-family: "Noto Sans", sans-serif;
@@ -163,6 +151,7 @@ const navItems = [
   text-align: center;
   color: #dcdfe4;
   margin-top: 60px;
+  scroll-snap-type: y mandatory;
 }
 
 html {

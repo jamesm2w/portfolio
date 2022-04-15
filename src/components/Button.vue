@@ -7,7 +7,7 @@
       border-2 border-white
       hover:bg-white hover:text-black
       transition
-      duration-500
+      duration-100
       px-3
       py-2
       mr-2

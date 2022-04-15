@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="section">
     <div class="text-center m-auto sm:w-full md:w-9/12 font-semibold text-5xl py-2" ref="sectionProjects">
       {{title}}
     </div>
